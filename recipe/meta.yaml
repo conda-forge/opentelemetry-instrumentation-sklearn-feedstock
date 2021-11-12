@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-sklearn" %}
-{% set version = "0.25b2" %}
+{% set version = "0.26b1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/opentelemetry-instrumentation-sklearn-{{ version }}.tar.gz
-  sha256: d01428ff4d6c66f39d508d19dc5ce7e252e485dca79433bc874509d22b84f8a7
+  sha256: 46e5278e35afe7fd060014a0e8e9f3fe5e7c8a8e2009ed95165113ba32272d6c
 
 build:
   number: 0
@@ -21,7 +21,7 @@ requirements:
     - python >=3.6
   run:
     - opentelemetry-api ~=1.3
-    - opentelemetry-instrumentation ==0.25b2
+    - opentelemetry-instrumentation ==0.26b1
     - python >=3.6
     # - scikit-learn ~=0.24.0
     # - opentelemetry-test ==0.24b0
@@ -31,6 +31,8 @@ requirements:
     # - opentelemetry-test ==0.25b1
     # - scikit-learn ~=0.24.0
     # - opentelemetry-test ==0.25b2
+    # - scikit-learn ~=0.24.0
+    # - opentelemetry-test-utils ==0.26b1
 
 test:
   imports:
